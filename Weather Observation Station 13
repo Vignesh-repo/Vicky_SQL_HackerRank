@@ -1,0 +1,3 @@
+select cast(sum(lat_N) as numeric(10,4)) as Sum
+from Station
+where lat_N> 38.7880 and lat_N < 137.2345
