@@ -1,0 +1,2 @@
+select top 1 convert(decimal(15,4), long_W) from station
+where lat_N<137.2345 order by lat_N desc
