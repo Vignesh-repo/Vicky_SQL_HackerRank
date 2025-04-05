@@ -1,0 +1,2 @@
+select round(long_W, 4) from Station
+where lat_N in (select min(lat_N) from station where lat_N > 38.7780)
