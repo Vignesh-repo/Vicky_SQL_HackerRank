@@ -1,0 +1,4 @@
+select cast(lat_n as decimal (7,4))
+from (select lat_N, row_number() over(order by lat_N) as row from station) as X
+where row = (select round((count(lat_N)+1)/2,0) from station) 
+
